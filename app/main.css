@@ -46,7 +46,61 @@ table {
 
 /*RESET CSS*/
 
+/*GENERAL STYLES*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+label {
+	cursor: pointer;
+}
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 28px;
+}
+h3 {
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+
+/*GENERAL STYLES*/
+
+.cv-app {
+	font-family: 'Open Sans', sans-serif;
+}
+
 /*LEFT-SIDE*/
+
+/*LEFT-SIDE -> COLOR SCHEME*/
+
+.colorScheme-blue .cv-col-l {
+	background: #6a1b9a;
+}
+.colorScheme-blue .cv-author  {
+	background: #4a148c;
+}
+.colorScheme-blue .cv-author-name {
+	color: #fff;
+}
+
+.colorScheme-red .cv-col-l {
+	background: #fb3f4c;
+}
+.colorScheme-red .cv-author  {
+	background: #db3a4a;
+}
+.colorScheme-red .cv-author-name {
+	color: #fff;
+}
+
+/*LEFT-SIDE -> COLOR SCHEME*/
 
 .cv-col-l {
 	width: 350px;
@@ -54,18 +108,27 @@ table {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #6a1b9a;
+	background: #12bd0d;
 	-webkit-box-shadow: 3px 0 10px 0 rgba(0,0,0,0.5);
 	box-shadow: 3px 0 10px 0 rgba(0,0,0,0.5);
 	box-sizing: border-box;
 }
+.cv-construction {
+	font-style: italic;
+	position: absolute;
+	top: 16px;
+}
 .cv-author {
-	background: #4a148c;
+	background: #05a300;
 	padding: 44px;
 }
 .cv-author-name {
-	color: #fff;
+	color: #333;
 	font-size: 36px;
+}
+
+.cv-contacts {
+	padding: 44px;
 }
 
 /*LEFT-SIDE*/
@@ -76,11 +139,25 @@ table {
 	margin-left: 350px;
 }
 
-/*RIGHT-SIDE*/
+/*RIGHT-SIDE -> COLOR-PICKER*/
+
+.cv-colorpicker {
+	margin-left: 400px;
+}
+.cv-colorpicker-list {
+	
+}
+.cv-colorpicker-item {
+	margin-right: 16px;
+	margin-bottom: 8px;
+	display: flex;
+}
+
+/*RIGHT-SIDE -> COLOR-PICKER*/
 
 .container {
-	max-width: 420px;
-	margin: 0 auto;
+	max-width: 460px;
+	margin: 0 auto 0 90px;
 }
 
 /*RIGHT-SIDE*/

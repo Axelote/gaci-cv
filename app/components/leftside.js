@@ -1,13 +1,14 @@
 import React from 'react'
 
-import User from './User'
+import Author from './Author'
+import Contacts from './Contacts'
 
 export default class LeftSide extends React.Component {
-
 	render() {
 		return (
 			<div className="cv-col-l">
-				<User />
+				<Author />
+				<Contacts />
 			</div>
 		);
 	}
