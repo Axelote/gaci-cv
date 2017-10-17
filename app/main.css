@@ -151,9 +151,28 @@ h3 {
 	margin-right: 16px;
 	margin-bottom: 8px;
 	display: flex;
+	align-items: center;
 }
 
 /*RIGHT-SIDE -> COLOR-PICKER*/
+
+.cv-tools {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 50px;
+}
+.cv-tools-i {
+	padding: 15px;
+	cursor: pointer;
+}
+.cv-tools-i:hover {
+	color: #666;
+}
+.cv-tools-i.disabled {
+	color: #999;
+	cursor: no-drop;
+}
 
 .container {
 	max-width: 460px;
