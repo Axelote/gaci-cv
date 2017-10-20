@@ -6,7 +6,7 @@ export default class Tools extends React.Component {
 			<div className="cv-tools">
 				<div className="cv-tools-i disabled">Отправить</div>
 				<div className="cv-tools-i disabled">Печать</div>
-				<div className="cv-tools-i">Настройки</div>
+				<div className="cv-tools-i disabled">Настройки</div>
 			</div>
 		);
 	}

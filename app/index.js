@@ -5,13 +5,13 @@ import Header from './components/Header'
 import LeftSide from './components/LeftSide'
 import Content from './components/Content'
 
-const colors = ['default', 'blue', 'red']
+/* const colors = ['default', 'blue', 'red'] */
 
 class App extends Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {colorScheme: ''};
+		this.state = {colorScheme: 'default'};
 	}
 
 	changeSchemeClick(e) {
@@ -20,23 +20,25 @@ class App extends Component {
 		})
 	}
 
+
 	render() {
-		const listColors = colors.map((color) =>
+		{/*const listColors = colors.map((color) =>
 			<div className="cv-colorpicker-item" key={color.toString()}>
 				<div className="cv-colorpicker-checkbox-wrap">
 					<input type="radio" name="color" value={color} id={'color-' + color} className={'cv-colorpicker-checkbox'}  onChange={this.changeSchemeClick.bind(this)}/>
 				</div>
 				<label className="cv-colorpicker-label" htmlFor={'color-' + color}>{color}</label>
 			</div>
-		)
+		) */}
 		return (
 			<div className={'cv-app colorScheme-'+this.state.colorScheme}>
-				<div className="cv-colorpicker">
+			{/* <div className="cv-colorpicker">
 					<h3>Выберите цветовую схему</h3>
 					<div className="cv-colorpicker-list">
-						{listColors}
+						
 					</div>
-				</div>
+				</div> 
+			*/}
 				<LeftSide />
 				<Content />
 			</div>
