@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
 import Header from './components/Header'
-import LeftSide from './components/LeftSide'
+import Aside from './components/Aside'
 import Content from './components/Content'
 
 /* const colors = ['default', 'blue', 'red'] */
@@ -31,7 +31,7 @@ class App extends Component {
 			</div>
 		) */}
 		return (
-			<div className={'cv-app colorScheme-'+this.state.colorScheme}>
+			<main className={'cv-app colorScheme-'+this.state.colorScheme}>
 			{/* <div className="cv-colorpicker">
 					<h3>Выберите цветовую схему</h3>
 					<div className="cv-colorpicker-list">
@@ -39,9 +39,9 @@ class App extends Component {
 					</div>
 				</div> 
 			*/}
-				<LeftSide />
+				<Aside />
 				<Content />
-			</div>
+			</main>
 		)
 	}
 }

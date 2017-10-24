@@ -3,13 +3,13 @@ import React from 'react'
 import Author from './Author'
 import Contacts from './Contacts'
 
-export default class LeftSide extends React.Component {
+export default class Aside extends React.Component {
 	render() {
 		return (
-			<div className="cv-col-l">
+			<aside className="cv-col-l">
 				<Author />
 				<Contacts />
-			</div>
+			</aside>
 		);
 	}
 }
